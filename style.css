@@ -48,6 +48,11 @@ header{
     border-radius:15px ;
     align-items: center;
 }
+#autoportrait2{
+    border-radius:10px ;
+    align-items: center;
+    display: none;
+}
 
 p,h1,h2,h3,ul{
     color:#EDDDC0;
@@ -152,9 +157,6 @@ p,ul{
         flex-direction: column;
         margin: auto;
     }
-    #signature{
-        margin-top: 0px;
-    }
     #text1{
         margin-top: 0px;
     }
@@ -193,9 +195,6 @@ p,ul{
         flex-direction: column;
         margin: auto;
     }
-    #signature{
-        margin-top: 0px;
-    }
     #text1{
         margin-top: 0px;
     }
@@ -229,13 +228,10 @@ p,ul{
 @media screen and (max-width: 480px) {
     header{
         width:330px;
-        height:740px;
+        height:680px;
         display: flex;
         flex-direction: column;
         margin: auto;
-    }
-    #signature{
-        margin-top: 0px;
     }
     #text1{
         margin-top: 0px;
@@ -245,11 +241,16 @@ p,ul{
     }
     #autoportrait{
         margin: auto;
+        display: none;
+    }
+    #autoportrait2{
+        margin: auto;
+        display: block;
     }
 
     hr{
-        margin-left: 2.5%;
-        margin-right: 2.5%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
 
     p,h1,h2,h3,ul{
@@ -269,14 +270,11 @@ p,ul{
 
 @media screen and (max-width: 430px) {
     header{
-        width:320px;
-        height:740px;
+        width:300px;
+        height:660px;
         display: flex;
         flex-direction: column;
         margin: auto;
-    }
-    #signature{
-        margin-top: 0px;
     }
     #text1{
         margin-top: 0px;
@@ -286,16 +284,64 @@ p,ul{
     }
     #autoportrait{
         margin: auto;
+        display: none;
+    }
+    #autoportrait2{
+        margin: auto;
+        display: block;
     }
 
     hr{
-        margin-left: 2.5%;
-        margin-right: 2.5%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 
     p,h1,h2,h3,ul{
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    h2{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    ul{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    header{
+        width:280px;
+        height:660px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    #text1{
+        margin-top: 0px;
+    }
+    #links{
+        margin-top: 0px;
+    }
+    #autoportrait{
+        margin: auto;
+        display: none;
+    }
+    #autoportrait2{
+        margin: auto;
+        display: block;
+    }
+
+    hr{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    p,h1,h2,h3,ul{
+        margin-left: 6px;
+        margin-right: 6px;
     }
 
     h2{
