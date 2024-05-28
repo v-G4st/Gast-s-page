@@ -45,7 +45,7 @@ header{
 }
 
 #autoportrait{
-    border-radius:20px ;
+    border-radius:15px ;
     align-items: center;
 }
 
@@ -63,12 +63,13 @@ p,h1,h2,h3,ul{
 }
 
 ul{
-    margin-right: 145px;
+    margin-right: 155px;
 }
 
 hr{
     margin-left: 15%;
     margin-right: 15%;
+    color:#EDDDC0;
 }
 
 button{
@@ -141,4 +142,45 @@ mark,.titre{
 
 p,ul{
     font-size: 17.5px;
+}
+
+@media screen and (max-width: 750px) {
+    header{
+        width:450px;
+        height:740px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    #signature{
+        margin-top: 0px;
+    }
+    #text1{
+        margin-top: 0px;
+    }
+    #links{
+        margin-top: 0px;
+    }
+    #autoportrait{
+        margin: auto;
+    }
+
+    hr{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    p,h1,h2,h3,ul{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    h2{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    ul{
+        margin-right: 95px;
+    }
 }
